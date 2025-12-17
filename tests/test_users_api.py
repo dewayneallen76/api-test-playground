@@ -22,3 +22,6 @@ def test_get_user():
     # Check that data is present
     assert data['id'] == 1
     assert data['name'] == "Leanne Graham"
+    assert 'email' in data
+    assert 'phone' in data
+    # assert 'lastname' in data
