@@ -31,5 +31,8 @@ def test_user_total():
     endpoint = f"{API_URL}/users"
     response = requests.get(endpoint)
 
+    # Confirm that endpoint can be reached
+    assert response.status_code == 200
+
     data = response.json()
     assert len(data) == 10
